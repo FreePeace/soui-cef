@@ -40,9 +40,9 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\config;..\components;..\SOUI\include;..\utilities\include;..\..\cef_3.2171.1979_windows32\;..\"
+				AdditionalIncludeDirectories="&quot;$(SOUIPATH)\config&quot;;&quot;$(SOUIPATH)\components&quot;;&quot;$(SOUIPATH)\SOUI\include&quot;;&quot;$(SOUIPATH)\utilities\include&quot;;..\..\cef_binary_3.2171.1979_windows32\;..\"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;_DEBUG"
-				RuntimeLibrary="3"
+				RuntimeLibrary="1"
 				TreatWChar_tAsBuiltInType="true"
 				UsePrecompiledHeader="2"
 				BrowseInformation="1"
@@ -62,8 +62,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="utilitiesd.lib souid.lib lib\debug\libcef.lib lib\debug\libcef_dll_wrapper.lib"
-				OutputFile="..\bin\$(ProjectName).exe"
+				AdditionalDependencies="utilitiesd.lib souid.lib ..\..\cef_binary_3.2171.1979_windows32\Debug\libcef.lib ..\..\cef_binary_3.2171.1979_windows32\out\debug\lib\libcef_dll_wrapper.lib"
+				OutputFile="..\..\cef_binary_3.2171.1979_windows32\out\debug\$(ProjectName).exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories="..\bin"
@@ -135,8 +135,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="utilities.lib soui.lib"
-				OutputFile="..\bin\$(ProjectName).exe"
+				AdditionalDependencies="utilities.lib soui.lib ..\..\cef_binary_3.2171.1979_windows32\Release\libcef.lib ..\..\cef_binary_3.2171.1979_windows32\out\Release\libcef_dll_wrapper.lib"
+				OutputFile="..\..\cef_binary_3.2171.1979_windows32\out\Release\$(ProjectName).exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				AdditionalLibraryDirectories="&quot;$(SOUIPATH)\bin&quot;"

@@ -1,3 +1,4 @@
-./Debug/*
-./Release/*
-./uires/*.bak
+Debug/*
+Release/*
+uires/*.bak
+*.bak
